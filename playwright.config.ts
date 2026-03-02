@@ -34,8 +34,8 @@ export default defineConfig({
     },
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    actionTimeout: 10000,
-    navigationTimeout: 10000,
+    actionTimeout: 5000,
+    navigationTimeout: 5000,
     trace: 'on-first-retry',
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
