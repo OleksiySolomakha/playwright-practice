@@ -60,6 +60,21 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
 
+    {
+      name: 'stage',
+      testMatch: '*.stage.spec.ts',
+      use:{
+        baseURL: process.env.BASE_URL_STAGING,
+      }
+    },
+
+    {
+      name: 'develop',
+      testMatch: '*.dev.spec.ts',
+      use:{
+        baseURL: process.env.BASE_URL_DEV,
+      }
+    }
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',

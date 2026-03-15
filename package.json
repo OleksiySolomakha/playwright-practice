@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:dev": "ENV=dev npx playwright test --config=playwright.config.e2e.ts --headed",
-    "test:stage": "ENV=stage npx playwright test --config=playwright.config.e2e.ts --headed"
+    "test:dev": "npx playwright test --project=develop --headed",
+    "test:stage": "npx playwright test --project=stage --headed"
   },
   "keywords": [],
   "author": "",
